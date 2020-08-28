@@ -1,0 +1,36 @@
+.About-block
+{
+  margin-top: 50px;
+}
+.About-block img
+{
+  width: 100%;
+}
+.About-pic img
+{
+ 
+    position: relative;
+    width: 100%;
+    padding-left: 80px;
+}
+.About-text
+{
+  width: 100%;
+  padding: 46px 0 0 76px;
+}
+.About-text h4
+{
+  color: #000080 !important;
+}
+.About-text h2
+{
+  max-width: 290px;
+  padding-bottom: 12px;
+
+}
+.About-text p{
+  font-size: 16px;
+  padding-right: 150px;
+  padding-bottom: 10px;
+
+}

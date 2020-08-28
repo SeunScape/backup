@@ -1,0 +1,19 @@
+.mx-autoPack
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 120px;
+    background: url("https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg") no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    width: 120px !important;
+    border-radius: 50%;
+    margin-top: 25px;
+    
+}
+
+.justify-text-center{
+    padding-left: 150px;
+    padding-right: 150px;
+}
