@@ -128,7 +128,7 @@ class AppPage extends React.Component {
                     <img
                       width={678}
                       height={526}
-                      src="wp-content/uploads/sites/2/2018/06/banner_vector2.png"
+                      src="/images/banner_vector2.png"
                       className="vc_single_image-img attachment-full"
                       alt
                       srcSet="http://klbtheme.com/cryptoking/blue/wp-content/uploads/sites/2/2018/06/banner_vector2.png 678w, http://klbtheme.com/cryptoking/blue/wp-content/uploads/sites/2/2018/06/banner_vector2-300x233.png 300w"
