@@ -110,7 +110,7 @@ export default class NavbarPage extends Component {
                     <MDBNavLink className="link-adjustment btn-empty" to="/SignIn">Sign In</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                    <Link to="contact" 
+                    <Link to="contact-div" 
                               smooth={true} 
                               duration={500}
                               className="inkStyle">
