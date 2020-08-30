@@ -170,13 +170,13 @@
     }
     #navbarCollapse
     {
-        background: rgba(0, 0, 128, 0.5)
+        background: rgba(0, 0, 128, 0.9)
     }
     .navbar-toggler
     {
         padding: 1px 5px;
         font-size: 18px;
         line-height: 0.3px;
-        background: #fff !important;
+
     }
 }
