@@ -1115,7 +1115,7 @@ body.authentication-bg {
   .navbar-custom {
     margin-top: 0px;
     padding: 10px 0px !important;
-    background-color: #ffffff !important;
+    /* background-color: #ffffff !important; */
     -webkit-box-shadow: 0 10px 33px rgba(15, 31, 62, 0.1);
     box-shadow: 0 10px 33px rgba(15, 31, 62, 0.1);
     color: #0f1f3e !important;

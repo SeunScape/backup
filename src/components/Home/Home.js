@@ -24,41 +24,6 @@ class AppPage extends React.Component {
         <div className="header-section">
         <NavbarPage />
         <MDBView>
-          {/* <MDBMask className="d-flex justify-content-center align-items-center gradient header-row">
-            <MDBContainer className="intro-box">
-              <MDBRow className="intro">
-                <MDBCol
-                  md="6"
-                  className="white-text text-center text-md-left mt-xl-5 mb-5"
-                >
-                  <MDBAnimation type="fadeInLeft" delay=".3s" className="intro-text">
-                    <h1 className="h1-responsive  mt-sm-5">
-                      We Are Here For You!
-                    </h1>
-                    <h6 className="mb-4">
-                    Always available to trade with, in time of emergencies and distress as we have an integration of several trading staffs to serve you round the clock, irrespective of your time zone.
-                    </h6>
-                    <div className="btn-space">
-                    <MDBBtn className="btn-style">Get Started</MDBBtn>
-                    <MDBBtn outline color="white" className="btn-text">
-                      Sign In
-                    </MDBBtn>
-                    </div>
-                  </MDBAnimation>
-                </MDBCol>
-
-                <MDBCol md="6" xl="5" className="mt-xl-5 image-adjust">
-                  <MDBAnimation type="fadeInRight" delay=".3s">
-                    <img
-                      src="/images/banner_vector2.png"
-                      alt=""
-                      // className="img-bar"
-                    />
-                  </MDBAnimation>
-                </MDBCol>
-              </MDBRow>
-            </MDBContainer>
-          </MDBMask> */}
           <div id="home">
   <style
     type="text/css"

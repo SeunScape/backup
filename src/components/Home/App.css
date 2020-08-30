@@ -19,7 +19,7 @@
   
   @media only screen and (max-width: 400px) {
     #apppage .animated img {
-      max-height: 50vh;
+      max-height: 60vh;
       /* transform: translateX(-50%); */
       left: 35%;
       /* position: absolute; */
@@ -40,14 +40,14 @@
     /* .navbar-custom {
     background-color: #000080!important;
   } */
-  .navbar-custom {
+  /* .navbar-custom {
     margin-top: 0px;
     padding: 10px 0px !important;
     background-color: #000080!important;
     -webkit-box-shadow: 0 10px 33px rgba(15, 31, 62, 0.1);
     box-shadow: 0 10px 33px rgba(15, 31, 62, 0.1);
     color: white !important;
-}
+} */
   }
   @media only screen and (max-width: 767px) {
     #tsparticles
@@ -106,7 +106,7 @@ body, .btn {
     }
 
     .cardPic img{
-      width: 60% !important;
+      width: 70% !important;
     }
     .centered-text
     {
@@ -150,6 +150,10 @@ body, .btn {
     {
       width: 38em !important;
     }
+    .info-space h3
+    {
+      font-size: 21px !important;
+    }
     .info-text
     {
       width: 45em !important;
@@ -180,7 +184,7 @@ body, .btn {
   }
   .About-pic img
   {
-    width: 65% !important;
+    width: 80% !important;
   }
   @media only screen and (max-width: 600px){
     .CardText p
@@ -196,12 +200,12 @@ body, .btn {
   @media only screen and (max-width: 576px){
     .CardText p
     {
-      width: 27em !important;
+      width: 23em !important;
       font-size: 14px !important;
     }
     .info-text
     {
-      width: 27em !important;
+      width: 23em !important;
       font-size: 14px !important;
     }
     .About-text p
@@ -213,6 +217,14 @@ body, .btn {
     {
       font-size: 16px;
     } */
+    .icon-image {
+      max-width: 150px;
+      height: auto;
+    }
+    .About-text h2
+    {
+      font-size: 18px;
+    }
   }
   @media only screen and (max-width: 768px) {
     .centered-text

@@ -120,7 +120,7 @@ export default class NavbarPage extends Component {
           // </div>
           <div>
           <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
-          <div class="container">
+          <div class="container-fluid nav-adjust">
               <Link to= "/">
                      <img 
                     src="/images/IMG-20200317-WA0134-removebg.png" 
@@ -137,9 +137,11 @@ export default class NavbarPage extends Component {
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                   </button> */}
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
               <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
                       <li class="nav-item font-weight-600 active">

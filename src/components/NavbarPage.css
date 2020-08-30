@@ -11,20 +11,21 @@
     color: none !important;
 }
 .navbar-custom {
-    /* padding: 20px 0px !important; */
     width: 100% !important;
     border-radius: 0px !important;
     z-index: 999 !important;
     margin-bottom: 0px !important;
     -webkit-transition: all 0.5s ease-in-out !important;
     transition: all 0.5s ease-in-out !important;
-    
   }
-  
+  .navbar-custom .navbar-nav li
+  {
+      padding-top: 5px;
+  }
   .navbar-custom .navbar-nav li a {
     line-height: 26px !important;
     color: #ffffff !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
     -webkit-transition: 0.2s linear !important;
     transition: 0.2s linear !important;
     background-color: transparent !important;
@@ -111,6 +112,7 @@
     -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
     color: #0f1f3e !important;
+        max-height: 100px;
   }
   
   .nav-sticky .navbar-toggles {
@@ -150,9 +152,31 @@
     text-transform: uppercase;
     
 }
-@media (max-width: 768px) and (min-width: 200px){
+.mdi-menu
+{
+    font-size: 24px;
+}
+@media (max-width: 768px){
     .navbar-btn {
-        margin: 6px 0px !important;
-        padding: 10px 8px;
+        margin: 0 0px !important;
+        padding: 10px 5px;
     }
       }
+
+      @media (max-width: 990px)
+{
+    .nav-adjust {
+        width: 50% auto;
+    }
+    #navbarCollapse
+    {
+        background: rgba(0, 0, 128, 0.5)
+    }
+    .navbar-toggler
+    {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3px;
+        background: #fff !important;
+    }
+}
