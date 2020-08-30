@@ -1,6 +1,8 @@
 
   body{
-    font-family: muli;
+    font-family: muli,sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   #apppage .view {
     background-image: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg");
@@ -8,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 140vh;
+    min-height: 100vh;
   }
   
   #apppage h6 {
@@ -18,25 +20,72 @@
   @media only screen and (max-width: 400px) {
     #apppage .animated img {
       max-height: 50vh;
-      transform: translateX(-50%);
-      left: 50%;
-      position: absolute;
+      /* transform: translateX(-50%); */
+      left: 35%;
+      /* position: absolute; */
     }
   }
-  @media only screen and (max-width: 767px) {
+
+  /* @media only screen and (max-width: 767px) {
     #apppage .animated img {
       max-height: 35vh;
       left: -5%;
     }
+  } */
+  @media only screen and (max-width: 992px) {
+    #tsparticles
+    {
+      height: 1035px !important;
+    }
+    /* .navbar-custom {
+    background-color: #000080!important;
+  } */
+  .navbar-custom {
+    margin-top: 0px;
+    padding: 10px 0px !important;
+    background-color: #000080!important;
+    -webkit-box-shadow: 0 10px 33px rgba(15, 31, 62, 0.1);
+    box-shadow: 0 10px 33px rgba(15, 31, 62, 0.1);
+    color: white !important;
+}
   }
   @media only screen and (max-width: 767px) {
-    .About-pic img
+    #tsparticles
     {
-      max-height: 35vh;
-      left: -5%;
+      height: 850px !important;
     }
   }
-
+  @media only screen and (max-width: 767px) and (min-width: 320px)
+  {
+  .vc_row.klb_xs_vc_custom_1528408690919 {
+      padding-top: 100px !important;
+      padding-bottom: 100px !important;
+      margin-top: 50px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #tsparticles
+  {
+    height: 800px !important;
+  }
+}
+/* @media only screen and (max-width: 767px){
+.navbar-brand img {
+    /* max-width: 200px; */
+    /* margin-top: -20px 
+} */
+@media only screen and (max-width: 480px){
+body, .btn {
+    font-size: 14px;
+}
+.h1, h1 {
+  font-size: 1.3rem;
+}
+.banner_btn .btn
+{
+  padding: 12px !important;
+}
+}
   @media only screen and (max-width: 1200px) {
     .row-space {
       display: block;
@@ -53,12 +102,122 @@
     .CardText h2
     {
       text-align: center !important;
+      font-size: 24px;
+    }
+
+    .cardPic img{
+      width: 60% !important;
+    }
+    .centered-text
+    {
+      text-align: center !important;
+    }
+    .cardPic{
+      justify-content: center;
+      text-align: center;
+    }
+    .About-pic
+    {
+      text-align: center;
     }
     .About-pic img{
-      padding-left: 200px;
-      padding-right: 200px;
-      padding-top: 200px;
-      padding-bottom: 200px;
+      width: 75% !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .info-space h3
+    {
+      font-size: 24px !important;
+    }
+    .info-space h4
+    {
+      font-size: 18px !important;
+    }
+
+    .CardText p
+    {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50em;
+      font-size: 14px;
+      text-align: center;
+      justify-content: center;
+    }
+
+  }
+  @media only screen and (max-width: 1200px) {
+    .CardText p
+    {
+      width: 38em !important;
+    }
+    .info-text
+    {
+      width: 45em !important;
+      line-height: 1.5rem;
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .CardText p
+    {
+      width: 35em !important;
+    }
+    .About-text p
+    {
+      width: 35em !important;
+    }
+    .CardText h2
+    {
+      font-size: 17px !important;
+    }
+    .info-text
+    {
+
+      width: 40em !important;
+      line-height: 1.5rem;
+      font-size: 14px;
+    }
+  }
+  .About-pic img
+  {
+    width: 65% !important;
+  }
+  @media only screen and (max-width: 600px){
+    .CardText p
+    {
+      width: 30em !important;
+    }
+    .About-text p
+    {
+      width: 30em !important;
+    }
+  }
+
+  @media only screen and (max-width: 576px){
+    .CardText p
+    {
+      width: 27em !important;
+      font-size: 14px !important;
+    }
+    .info-text
+    {
+      width: 27em !important;
+      font-size: 14px !important;
+    }
+    .About-text p
+    {
+      width: 20em !important;
+      font-size: 14px !important;
+    }
+    /* .About-text h2
+    {
+      font-size: 16px;
+    } */
+  }
+  @media only screen and (max-width: 768px) {
+    .centered-text
+    {
+      text-align: center !important;
     }
   }
   @media only screen and (max-width: 1200px) {
@@ -76,11 +235,17 @@
     }
     .About-text p
     {
-      text-align: center !important;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50em;
+      font-size: 14px;
+      text-align: center;
+      justify-content: center;
     }
     .About-text h4
     {
       text-align: center !important;
+      margin-top: 20px;
     }
   }
   @media (max-width: 767px) and (orientation: landscape) {
@@ -91,13 +256,13 @@
       position: relative;
     }
   }
-  @media only screen and (min-width: 1300px) {
+  /* @media only screen and (min-width: 1300px) {
     .About-pic
     {
       display: block;
       width: 100%;
     }
-  }
+  } */
   @media (min-width: 992px){
   .col-md-6 {
     -webkit-box-flex: 0;
@@ -105,17 +270,12 @@
     flex: 0 0 50%;
     max-width: 50%;
 }
-  }
+}  /* /* } */
   .navbar{
     box-shadow: none !important;
-    height: 90px;
+
   }
-   .nav-item{
-      padding-left: 20px !important;
-  }
-  .link-adjustment{
-    margin-top: 10px;
-  } 
+
   .icon-image img{
     width: auto;
     text-align: left;
@@ -124,15 +284,7 @@
     max-width: 180px;
     height: auto;
   }
-  .ovarlay-style
-  {
-      position: "absolute";
-      top: 0;
-      left: 0;
-      width: "100%";
 
-      
-  }
 .white-text
 {
   z-index: 10;
@@ -281,13 +433,13 @@ section{
 {
   width: 100%;
 }
+@media only screen and (min-width: 1200px) {
 .About-pic img
 {
  
     position: relative;
-    width: 100%;
-    padding-left: 80px;
-
+    width: 100% !important;
+}
 }
 .About-text
 {
@@ -306,7 +458,6 @@ section{
 }
 .About-text p{
   font-size: 16px;
-  padding-right: 150px;
   padding-bottom: 10px;
 
 }
@@ -335,23 +486,33 @@ section{
 }
 .CardText p{
   font-size: 16px;
-  padding-right: 80px;
-  padding-bottom: 10px;
-  
+  margin-right: auto;
+  width: 35em
 }
-.Nav-responsive
+/* .Nav-responsive
 {
   max-width: 1249px !important;
-}
-.top-nav-collapse { 
+} */
+/* .top-nav-collapse { 
   background-color:   #000080 !important; 
   height: 100px;
-}
+} */
 .info-text
 {
   margin-top: 20px;
-  padding-left: 350px;
-  width: 75%;
+}
+.info-text
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+  line-height: 1.5rem;
+  font-size: 14px;
+}
+.About-text p{
+  font-size: 16px;
+  margin-right: auto;
+  width: 35em
 }
 .contact-section
 {
@@ -371,3 +532,11 @@ section{
   border-radius: 50px;
 }
 
+#tsparticles
+{
+    position: "absolute";
+    top: 0;
+    left: 0;
+    width: "100%";
+    height: 100vh;
+}

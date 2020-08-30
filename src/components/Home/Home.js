@@ -149,6 +149,7 @@ class AppPage extends React.Component {
         </MDBView>
         </div>
         <div
+          id="tsparticles-div"
           style={{
             position: "absolute",
             top: 0,
@@ -177,17 +178,18 @@ class AppPage extends React.Component {
           </section> */}
            <section id="Card">
           <MDBRow className="CardBlock row-space">
-            <mdbCol className="col-md-6 cardPic">
+            <mdbCol className="col-md-6 col-sm-6 col-lg-8 cardPic">
               <MDBAnimation reveal type="fadeInLeft">
               <img src= "/images/unnamed.png" className="card-img"/>
               </MDBAnimation>
             </mdbCol>
-            <mdbCol className="col-md-6 CardText">
+            <mdbCol className="col-md-6 col-sm-6 col-lg-8 CardText">
               <MDBAnimation reveal type="fadeInRight">
+              <div className="centered-text">
               <h4>About Us</h4>
               <h2>We were thinking always global</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p className="card-letters">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              </div>
               </MDBAnimation>
             </mdbCol>
             </MDBRow>
@@ -198,7 +200,9 @@ class AppPage extends React.Component {
               <mdbCol className="col-lg-8">
               <h3>Your peace of mind is assured!!!</h3>
               <h4> While you trade with <strong>FLIPPAY</strong></h4>
+              <div className="info-div">
               <p className="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
             </mdbCol>
             <div className="bt-center">
               <button className="item-button">Get Started</button>
@@ -209,12 +213,12 @@ class AppPage extends React.Component {
           </section>
           <section id="About">
           <MDBRow className="About-block row-space">
-            <mdbCol className="col-md-6 About-pic">
+            <mdbCol className="col-md-6 col-sm-6 col-lg-8 About-pic">
               <MDBAnimation reveal type="fadeInLeft">
               <img src= "/images/cardmapr-LQZQM_z1b-s-unsplash.jpg"/>
               </MDBAnimation>
             </mdbCol>
-            <mdbCol className="col-md-6 About-text">
+            <mdbCol className="col-md-6 col-sm-6 col-lg-8 About-text">
               <MDBAnimation reveal type="fadeInRight">
               <h4>About Us</h4>
               <h2>We were thinking always global</h2>

@@ -948,7 +948,7 @@ to {
 /*===================================*
 02. START HEADER DESIGN
 *===================================*/
-header {
+ header {
 	height: 110px;
 	padding: 25px 0;
 	transition: all 0.4s ease 0s;
@@ -988,10 +988,10 @@ header a:hover,.navbar-nav li a.active {
 	height: auto;
 	line-height: normal;
 	padding: 10px 25px;
-}
+} */
 
 /*submenu style start from here*/
-.dropdown-menu {
+	 .dropdown-menu {
     padding: 0px 0; 
     margin: 0 0 0; 
     border: 0px solid transition !important;
@@ -1000,9 +1000,9 @@ header a:hover,.navbar-nav li a.active {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 
-}
+} 
 /*first level*/
-.navbar-nav .dropdown-menu {
+ .navbar-nav .dropdown-menu {
     padding: 10px;
 }
 .dropdown-menu li > a{
@@ -1012,17 +1012,17 @@ header a:hover,.navbar-nav li a.active {
 .navbar .show .dropdown-menu > li > a:focus,
 .navbar .show .dropdown-menu > li > a:hover{
 	color:#26b6d4;
-}
+} 
 
 /*Drop-down menu work on hover*/
-.btco-hover-menu{
+ .btco-hover-menu{
 	background: none;
 	margin: 0;
 	padding: 0;
 	min-height:20px
-}
+} 
 
-@media only screen and (max-width: 991px) {
+ @media only screen and (max-width: 991px) {
 	.fixed-top {
     	position: absolute;
 	}
@@ -1030,23 +1030,23 @@ header a:hover,.navbar-nav li a.active {
         transform: rotate(-90deg);
     }
 
-}
-@media only screen and (min-width: 991px) {
+} 
+	 @media only screen and (min-width: 991px) {
 	.dropdown-menu .dropdown-toggle:after {position: absolute;right: 6px;top: 10px;}
 
     .btco-hover-menu .collapse ul li{position:relative;}
     .btco-hover-menu .collapse ul li:hover> ul{display:block}
     .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
-    /*******/
+    
     .btco-hover-menu .collapse ul ul li{position:relative}
     .btco-hover-menu .collapse ul ul li:hover> ul{display:block; top:-10px;}
     .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
-    /*******/
+    
     .btco-hover-menu .collapse ul ul ul li{position:relative}
     .btco-hover-menu .collapse ul ul ul li:hover ul{display:block}
     .btco-hover-menu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
 
-}
+} 
 
 
 
