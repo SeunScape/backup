@@ -55,7 +55,7 @@ class AppPage extends React.Component {
               <div className="banner_text">
                 <div className="col-md-6"></div>
                 <h1>
-                  <span>Flippay</span> Landing Page
+                  <div>Flippay</div>
                 </h1>
                 <h3>We were thinking always global</h3>
                 <p>
