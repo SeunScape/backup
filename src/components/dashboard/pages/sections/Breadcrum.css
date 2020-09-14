@@ -1,0 +1,55 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+.card-body::before
+{
+    content: none !important;
+}
+
+.account-card
+{
+    width: 70%;
+
+}
+.naira-card
+{
+    justify-content: center;
+    float: right;
+}
+.icon-data
+{
+    float: right;
+    text-align: right;
+
+}
+.icon-data i
+{
+    position: absolute;
+    /* min-width: 50px; */
+    font-size: 45px;
+    top: 30%;
+    left: 80%;
+    color: #FF8800;
+}
+#bell i
+{
+
+    /* min-width: 50px; */
+    font-size: 25px;
+    padding-right: 10px;
+    color: #FF8800;
+}
+.shadow-box-example {
+    width: 100%;
+    background-color: #64b5f6;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  /* #btc-link
+  {
+    border: 1px solid white;
+    color: blue;
+    padding: 10px 20px;
+    background-color:white;
+  } */
+  #btc-link:hover{
+      transition: 0.5 ease-in;
+    color: black;
+  }

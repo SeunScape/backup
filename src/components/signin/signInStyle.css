@@ -1,0 +1,186 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+.img-styler{ 
+    /* background-image: url('/images/stefan-stefancik-pzA7QWNCIYg-unsplash.jpg'); */
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/stefan-stefancik-pzA7QWNCIYg-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: calc(100vh);
+
+}
+.overLay
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background:rgba(0,0,0,0.3); */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.row-no-padding {
+
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+/* .contain
+{
+    margin-top: 200px;
+    
+} */
+.form-wrapper {
+    margin-top: 150px;
+  }
+  .signIn-form{
+      width: 65%;
+      margin: auto !important;
+  }
+  .signIn-form h1{
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .signIn-form p{
+      text-align: center;
+  }
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 15px 0;
+    border-bottom: 2px solid black;
+    height: 100px !important;
+}
+.textbox i{
+    position: absolute; 
+    float: left;
+    padding: 30px;
+    min-width: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+    padding: 60px;
+    height: 100px !important;
+}
+
+.connect {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color:  #000080 !important;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+.connect:hover{
+	color: #999  !important ;
+}
+.form-btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+@media only screen and (max-width: 992px) and (min-width: 771px){
+    .row-block
+    {
+        display: block;
+        max-width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .form-style
+    {
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+    /* .row-no-padding {
+        /* margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important; */
+        .signIn-form
+        {
+            align-items: center
+        }
+        .signIn-form h1{
+            margin-bottom: 40px !important;
+        }
+    .formStyle
+    {
+        min-height: calc(100vh);
+    }
+    .textbox
+    {
+        height: 100px !important;
+    }
+    .textbox input
+    {
+        height: 100px !important;
+    }
+    .textbox i{
+
+        /* padding: 40px; */
+    }
+    
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+}
+@media only screen and (max-width: 771px){
+    .row-block
+    {
+        display: block;
+        max-width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .form-style
+    {
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+    .formStyle
+    {
+        min-height: calc(100vh);
+    }
+}
+/* .btn:hover{
+	background-position: right;
+} */
+

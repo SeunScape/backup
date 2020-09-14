@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.walletStyle
+{
+    /* text-align: center; */
+    /* justify-content: center !important; */
+    float: right;
+    margin: 50px;
+    width: 1200px;
+    
+}
+#bColor
+{
+        display: flex;
+        /* border: 1px solid blue;  
+        background-color: yellow;  */
+        color: black;
+}
+#bitColor
+{
+    /* float: right !important;
+    text-align: right !important;
+    padding-left: 350px; */
+} 
+#exChange
+{
+    margin-top: 50px;
+}
+.btn:not(:disabled):not(.disabled)
+{
+    border-radius: 0px !important;
+}
+#btn-margin
+{
+    margin-top: 40px;
+}
+#copyText
+{
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+#siv-icon i{
+    font-size: 24px !important;
+    color: #0d47a1;
+}
+#feetColor
+{
+    background-color: #0d47a1 ;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    flex-shrink: 0;
+}
+#siv-icon
+{
+    text-align: center !important;
+}
+.colorBT
+{
+    background-color: "#FF8800" !important;
+}
