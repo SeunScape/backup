@@ -4,9 +4,7 @@ import { Postdata } from './Postdata';
 import {Redirect} from 'react-router-dom';
 import './signInStyle.css';
 import { Link } from 'react-router-dom';
-import { isLogin } from './indexRoute';
 
-export const responseJSON = true;
  class signIn extends Component {
    
     constructor(props){
@@ -22,7 +20,7 @@ export const responseJSON = true;
         this.login =this.login.bind(this);
         this.onChange = this.onChange.bind(this);
     }
-        login(){
+    login(){
         const isValid = this.validate();
             if (isValid) {
                 // if(this.state.email && this.state.password){
@@ -143,5 +141,4 @@ export const responseJSON = true;
         )
     }
 }
-
 export default signIn;
