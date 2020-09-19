@@ -4,6 +4,7 @@ export function Getdata(type, userData){
     return new Promise((resolve, reject) =>{
         fetch(BaseUrl+type,{
             method: 'GET',
+     
             headers : { 
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

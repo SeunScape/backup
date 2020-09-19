@@ -17,3 +17,11 @@
 /* .sideStyle li a{
     color: white !important;
 } */
+.userImg
+{
+    width: 55px !important;
+}
+.user-circle
+{
+    text-align: center;
+}

@@ -1,18 +1,18 @@
-import { Postdata } from '../../SignIn/Postdata';
+import { Postdata } from '../../signin/Postdata';
 
 export const isLogin = () => {
-    if (localStorage.getItem("userData")) {
-        return true;
-    }
+    // if (localStorage.getItem("userData")) {
+    //     return true;
+    // }
 
-    return false;
+    // return false;
 }
 export const logger = () => {
-    Postdata('login', this.state).then((result) =>{
+    Postdata('login').then((result) =>{
         let responseJSON = result;
-            localStorage.setItem('token', responseJSON.message.token);
+            // localStorage.setItem('token', responseJSON.message.token);
                 // this.setState({redirect:true});
-                 // console.log(responseJSON)
+                 console.log(responseJSON)
             }
                 );
 }

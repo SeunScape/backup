@@ -4,28 +4,21 @@ import Layout from './Layout/Layout';
 import Home from './components/Home/Home';
 import signIn from './components/signin/SignIn';
 import signUp from './components/signin/SignUp';
-import dashboard from './components/dashboard/dashboard';
+import Dashboard from './components/dashboard/pages/DashboardPage';
 import Wallet from './components/dashboard/Wallet';
-class Routes extends Component {
-    constructor(){
-        super();
+import {PrivateRoute} from './components/dashboard/PrivateRoute';
+import DashboardPage from './components/dashboard/pages/DashboardPage';
 
-        this.state = {
-            loggedInStatus: "Not Logged In",
-            user: {}
-        }
-    }
+class Routes extends Component {
     render() {
         return (
-            <Layout>
                 <Switch>
-                    <Route path="/" exact component={Home}/>
-                    <Route path="/dashboard" component={dashboard}/>
                     <Route path="/SignUp" component={signUp}/>
                     <Route path="/SignIn" component={signIn}/>
-                    <Route path="/Wallet" component={Wallet} />
+                    <PrivateRoute path="/Wallet" component={Wallet} exact/>
+                    <PrivateRoute path="/dashboard" component={DashboardPage}/>
+                    <Route path="/" component={Home} exact/>
                 </Switch>
-            </Layout>
         )
     }
 }

@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol,MDBInput, MDBBtn } from "mdbreact";
 import { Postdata } from './Postdata';
 import {Redirect} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import './signInStyle.css';
-import { Link } from 'react-router-dom';
-
+import { Link} from 'react-router-dom';
+import axios from 'axios';
  class signIn extends Component {
    
     constructor(props){
@@ -15,24 +16,54 @@ import { Link } from 'react-router-dom';
             password:'',
             emailError: '',
             passwordError: '',
-            redirect:false
+            isLogin:false
         }
         this.login =this.login.bind(this);
         this.onChange = this.onChange.bind(this);
     }
-    login(){
+    login = e =>{
+        e.preventDefault();
+
+        const data = {
+            email:this.state.email,
+            password: this.state.password
+        }
+
         const isValid = this.validate();
             if (isValid) {
                 // if(this.state.email && this.state.password){
-                    Postdata('login', this.state).then((result) =>{
-                        let responseJSON = result;
-                            localStorage.setItem('token', responseJSON.message.token);
-                                this.setState({redirect:true});
-                                 // console.log(responseJSON)
-                            }
-                                );
+                    axios.post('login', data)
+                    .then(res => {
+                        localStorage.setItem('token', res.data.token)
+                        const { history } = this.props;
+                        history.push("/dashboard")
+                        // this.props.history.push('/dashboard')
+                        // this.context.history.push('/dashboard')
+                        // this.context.router.transitionTo('/dashboard')
+                    })
+                        .catch(err => {
+                        console.log(err);
+         })
+
                             // }        
             }
+        // const data = {
+        //     email:this.state.email,
+        //     password:this.state.password,
+        // }
+        // e.preventDefault();
+        // axios.post('login', data)
+        // .then(res => {
+        //     localStorage.setItem('token', res.data.token);
+        //     this.context.router.history.push({
+        //         pathname:'/dashboard',
+        //         state: { token: JSON.stringify(res.data) }
+        //     });
+        //     this.setState({isLogin: true});
+        // })
+        // .catch(function (error) {
+        //     console.log(error.message);
+        // })
     }
 // validate = yup.object().shape({
 //     email: Yup.string()
@@ -78,13 +109,13 @@ import { Link } from 'react-router-dom';
         this.setState({[e.target.name]:e.target.value})
     }
     render() {
-        if(this.state.redirect){
-            return <Redirect to= "/dashboard" />
-        }
+        // if(this.state.isLogin){
+        //     return <Redirect to= "/dashboard" />
+        // }
 
-        if(localStorage.getItem("userData")){
-            return(<Redirect to= "/dashboard"/>)
-        }
+        // if(localStorage.getItem("token")){
+        //     return(<Redirect to= "/dashboard"/>)
+        // }
         return (
             <div>
                         <MDBContainer fluid className="contain">
@@ -141,4 +172,4 @@ import { Link } from 'react-router-dom';
         )
     }
 }
-export default signIn;
+export default withRouter(signIn);
