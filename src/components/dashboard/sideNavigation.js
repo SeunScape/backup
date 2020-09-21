@@ -10,7 +10,7 @@ import axios from 'axios';
 // const url = 'https://api.flippay.co/user/user';
 class TopNavigation extends Component{
     state = {
-        user: []
+        user: false
     };
     componentDidMount(){
         const config = {
@@ -18,11 +18,12 @@ class TopNavigation extends Component{
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
         };
-       axios.get('user', config).then(
+       axios.get('user/user', config).then(
             res => {
                 this.setState({
                     user:res.data
                 })
+                console.log(res)
             },
             err => {
                 console.log(err)
@@ -75,8 +76,9 @@ class TopNavigation extends Component{
         // if (error) {
         //   return <div>Error: {error.message}</div>;
         // } else if (!isLoaded) {
-        //   return <div></div>;
+        //   return <div>loading</div>;
         // } else {
+            const user = this.state.user;
         return (
             <div className="sidebar-fixed position-fixed" id="background-logo" color="primary-color-dark">
                 <div>
@@ -94,13 +96,16 @@ class TopNavigation extends Component{
                     <p style={{color: "white"}}>Test User</p>
                     <p style={{color: "white", marginTop: "-10px"}}></p>
                     <div>
-                        {this.state.err || !this.state.user ? (
-                            <div>Error message</div>
-                        ):(
+
                             <div>
-                                <div>{this.state.user.user}</div>
+                               {
+                                   user ? 
+                                   <div>
+                                       <p style={{color:"white"}}>{user.user.email}</p>
+                                   </div>
+                                   :<p></p>
+                               }
                             </div>
-                        )}
                     </div>
                     <div>
                     </div>
@@ -144,5 +149,6 @@ class TopNavigation extends Component{
         );
     }
 }
+
 
 export default TopNavigation;

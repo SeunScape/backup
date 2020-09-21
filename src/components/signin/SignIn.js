@@ -32,7 +32,7 @@ import axios from 'axios';
         const isValid = this.validate();
             if (isValid) {
                 // if(this.state.email && this.state.password){
-                    axios.post('login', data)
+                    axios.post('auth/login', data)
                     .then(res => {
                         localStorage.setItem('token', res.data.token)
                         const { history } = this.props;

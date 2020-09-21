@@ -11,8 +11,9 @@ const AdminCardSection2 = () => {
               <div className="float-right">
               <MDBIcon far icon="money-bill-alt"/>
               </div>
-              <h3><strong>Bitcoin</strong></h3><br/>
-              <p>Lorem nostrud exercitation do pariatur dolor nulla.</p>
+              <h3><strong>wallet</strong></h3>
+              <br/>
+              <p>Trade on Bitcoin and Ethereum</p>
               <br/><br/>
               <Link to="/wallet" id="btc-link">TRADE NOW</Link>
             </MDBCardBody>

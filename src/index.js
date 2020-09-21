@@ -7,7 +7,7 @@ import Routes from './Routes';
 import { BrowserRouter} from 'react-router-dom';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://api.flippay.co/auth/';
+axios.defaults.baseURL = 'https://api.flippay.co/';
 // import Dashboard from "./components/dashboard/dashboard";
 const App = () => {
     return(

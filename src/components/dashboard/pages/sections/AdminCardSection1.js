@@ -22,7 +22,7 @@ const AdminCardSection1 = () => {
           <MDBCardBody>
                 <div>
                   <h4>Bitcoin Wallet Balance</h4>
-                  <h5>NGN 0</h5>
+                  <h5>BTC 0</h5>
                   <div className= "icon-data">
                   <i class="fab fa-bitcoin"></i>
                   </div>
