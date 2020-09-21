@@ -614,7 +614,7 @@ to {
 	color:#fff;
 	padding:10px;
 }
-.color-switch button::after {
+/* .color-switch button::after {
 	color: #ffffff;
 	content: "\f122";
 	font-family: "Ionicons";
@@ -635,7 +635,7 @@ to {
 	position: relative;
 	text-align: center;
 	width: 30px;
-}
+} */
 .color-switch .active::after {
     opacity: 1;
 }
@@ -674,7 +674,7 @@ to {
 
 
 /* BTN START */
-.btn {
+/* .btn {
 	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
 	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
 	border: 0 none;
@@ -797,7 +797,7 @@ to {
 	margin-left: 5px;
 	padding-top: 4px;
 	vertical-align: middle;
-}
+} */
 
 .scrollup {
 	background-color: #333333;
@@ -948,7 +948,7 @@ to {
 /*===================================*
 02. START HEADER DESIGN
 *===================================*/
- header {
+/* header {
 	height: 110px;
 	padding: 25px 0;
 	transition: all 0.4s ease 0s;
@@ -991,7 +991,7 @@ header a:hover,.navbar-nav li a.active {
 } */
 
 /*submenu style start from here*/
-	 .dropdown-menu {
+/* .dropdown-menu {
     padding: 0px 0; 
     margin: 0 0 0; 
     border: 0px solid transition !important;
@@ -1000,9 +1000,9 @@ header a:hover,.navbar-nav li a.active {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 
-} 
+} */
 /*first level*/
- .navbar-nav .dropdown-menu {
+/* .navbar-nav .dropdown-menu {
     padding: 10px;
 }
 .dropdown-menu li > a{
@@ -1012,17 +1012,17 @@ header a:hover,.navbar-nav li a.active {
 .navbar .show .dropdown-menu > li > a:focus,
 .navbar .show .dropdown-menu > li > a:hover{
 	color:#26b6d4;
-} 
+} */
 
 /*Drop-down menu work on hover*/
- .btco-hover-menu{
+/* .btco-hover-menu{
 	background: none;
 	margin: 0;
 	padding: 0;
 	min-height:20px
-} 
+}
 
- @media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 	.fixed-top {
     	position: absolute;
 	}
@@ -1030,23 +1030,23 @@ header a:hover,.navbar-nav li a.active {
         transform: rotate(-90deg);
     }
 
-} 
-	 @media only screen and (min-width: 991px) {
+}
+@media only screen and (min-width: 991px) {
 	.dropdown-menu .dropdown-toggle:after {position: absolute;right: 6px;top: 10px;}
 
     .btco-hover-menu .collapse ul li{position:relative;}
     .btco-hover-menu .collapse ul li:hover> ul{display:block}
-    .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
-    
-    .btco-hover-menu .collapse ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none} */
+    /*******/
+    /* .btco-hover-menu .collapse ul ul li{position:relative}
     .btco-hover-menu .collapse ul ul li:hover> ul{display:block; top:-10px;}
-    .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
-    
-    .btco-hover-menu .collapse ul ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none} */
+    /*******/
+    /* .btco-hover-menu .collapse ul ul ul li{position:relative}
     .btco-hover-menu .collapse ul ul ul li:hover ul{display:block}
     .btco-hover-menu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
 
-} 
+}
 
 
 
@@ -1075,7 +1075,7 @@ header a:hover,.navbar-nav li a.active {
 .v_dark_light header.active,
 .v_dark_light .dropdown-menu  {
 	background-color: #1a1c34;
-}
+} */
 /*===================================*
 02. END HEADER DESIGN
 *===================================*/
@@ -2284,7 +2284,7 @@ header a:hover,.navbar-nav li a.active {
 	border-radius: 40px;
 	padding-right: 45px;
 }
-.form_search button {
+/* .form_search button {
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 	border-radius: 0;
 	color: #999999;
@@ -2293,7 +2293,7 @@ header a:hover,.navbar-nav li a.active {
 	position: absolute;
 	right: 20px;
 	top: 12px;
-}
+} */
 .widget {
 	margin-bottom: 30px;
 }

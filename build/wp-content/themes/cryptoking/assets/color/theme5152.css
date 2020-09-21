@@ -4,7 +4,7 @@ Template Name: Cryptoking - Bitcoin & ICO Cryptocurrency Landing Page HTML Templ
 Version      : 1.4
 */
 
-.btn,
+/* .btn,
 button,
 .btn-default,
 .gradient_box,
@@ -12,12 +12,12 @@ button,
 .roadmap.gradient_box:before,
 .roadmap_icon.icon_gradient_box::before,
 .newsletter_form .outline_input,
-.progress-bar {
-	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
-	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
-}
+.progress-bar { */
+	/* background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%); */
+/* } */
 
-.btn-default::before,
+/* .btn-default::before,
 .btn-default.active.focus, 
 .btn-default.active:focus, 
 .btn-default.active:hover, 
@@ -29,10 +29,10 @@ button,
 .btn-default:focus,
 .btn.active:not(:disabled):not(.disabled), 
 .btn:active:not(:disabled):not(.disabled),
-.social_team a::before {
-	background: -webkit-linear-gradient(left, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
-    background: linear-gradient(to right, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
-}
+.social_team a::before { */
+	/* background: -webkit-linear-gradient(left, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+    background: linear-gradient(to right, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%); */
+/* } */
 
 .gradient_box.roadmap_inner::after,
 .gradient_box.roadmap_inner::before  {
